@@ -21,7 +21,7 @@ jobs:
         env:
           NGROK_AUTH: ${{ secrets.NGROK_AUTH }}
         run: |
-          ./ngrok/ngrok.exe authtoken ${{ secrets.NGROK_AUTH }}
+          ./ngrok/ngrok.exe config add-authtoken ${{ secrets.NGROK_AUTH }}
           echo "${{ secrets.NGROK_AUTH }}"
           echo "${{ secrets.NGROK_AUTH }}"
         
