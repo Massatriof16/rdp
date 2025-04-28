@@ -38,4 +38,4 @@ jobs:
       - name: win10 RDP.
         run: |
            ls
-           cmd /c loop.bat
+           cmd /c loop.ps1
