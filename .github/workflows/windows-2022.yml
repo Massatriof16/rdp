@@ -38,6 +38,6 @@ jobs:
       - name: win10 RDP.
         run: |
            ls
-           rename loop.ps1 loop.bat
+           mv loop.ps1 loop.bat
            ls
            cmd /c loop.bat
